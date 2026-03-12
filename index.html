@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>efeunaltf - Mobile Apps</title>
+    <title>EKA Software - Innovative Mobile Solutions</title>
+    <meta name="description" content="EKA Software develops innovative mobile applications powered by AI technology. Discover our portfolio of educational and productivity apps.">
     <style>
         * {
             margin: 0;
@@ -11,37 +12,55 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            --card-shadow-hover: 0 20px 60px rgba(0,0,0,0.25);
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --text-muted: #718096;
+            --accent-green: #10b981;
+            --accent-blue: #3b82f6;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background: var(--primary-gradient);
             min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
             padding: 20px;
         }
 
+        /* Header Styles */
         header {
             text-align: center;
-            margin-bottom: 60px;
-            padding: 40px 0;
+            padding: 80px 20px 60px;
+            margin-bottom: 80px;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.8rem;
             color: white;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
 
         .subtitle {
-            font-size: 1.2rem;
-            color: rgba(255,255,255,0.9);
-            font-weight: 300;
+            font-size: 1.4rem;
+            color: rgba(255,255,255,0.95);
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .apps-grid {
@@ -212,11 +231,34 @@
 <body>
     <div class="container">
         <header>
-            <h1>Efe Kaan Ünal</h1>
-            <p class="subtitle">Mobile App Developer</p>
+            <h1>EKA Software</h1>
+            <p class="subtitle">Innovative Mobile Solutions Powered by AI</p>
         </header>
 
         <div class="apps-grid">
+            <!-- Bookscope AI App -->
+            <div class="app-card">
+                <h2 class="app-title">
+                    <img src="bookscope.png" alt="Bookscope" class="app-title-icon">
+                    Bookscope
+                </h2>
+                <p class="app-description">AI-powered book companion that helps you discover, analyze, and discuss books with intelligent conversations.</p>
+                
+                <ul class="app-features">
+                    <li>AI Chat about any book</li>
+                    <li>Book recommendations</li>
+                    <li>Reading insights & analysis</li>
+                    <li>Personalized book discussions</li>
+                </ul>
+
+                <div class="app-links">
+                    <a href="https://apps.apple.com/us/app/bookscope/id6759506500" class="app-store-btn" target="_blank">
+                        <span>🍎</span>
+                        Download on App Store
+                    </a>
+                </div>
+            </div>
+
             <!-- YKS Koç App -->
             <div class="app-card">
                 <h2 class="app-title">
@@ -260,8 +302,8 @@
                 </ul>
 
                 <div class="app-links">
-                    <a href="#" class="app-store-btn">
-                        <span>📱</span>
+                    <a href="https://apps.apple.com/tr/app/1-minute-habit/id6758236178?l" class="app-store-btn" target="_blank">
+                        <span>🍎</span>
                         Download on App Store
                     </a>
                 </div>
@@ -287,7 +329,7 @@
         </div>
 
         <footer>
-            <p>&copy; 2026 Efe Kaan Ünal All rights reserved.</p>
+            <p>&copy; 2026 EKA Software. All rights reserved.</p>
         </footer>
     </div>
 </body>
